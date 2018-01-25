@@ -38,5 +38,5 @@
       - "{{ elasticsearch_http_port }}:9200"
       - "{{ elasticsearch_transport_port }}:9300"
     volumes:
-      - "elasticsearch_data_dir:/usr/share/elasticsearch/data:rw"
+      - "{{ elasticsearch_data_dir }}:/usr/share/elasticsearch/data:rw"
     env: "{{ elasticsearch_options | combine(elasticsearch_additional_options) }}"
