@@ -9,6 +9,7 @@ elasticsearch_version: '6.1.1'
 
 # Configuration
 elasticsearch_instance_name: "fromage"
+elasticsearch_data_dir: "/var/lib/elasticsearch"
 elasticsearch_memory: 1g
 
 # Cluster
